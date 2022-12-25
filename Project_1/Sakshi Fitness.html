@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Fitness</title>
+    <link rel="stylesheet" href="./Sakshi Fitness_files/style.css">
+    <link href="./Sakshi Fitness_files/css2" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-image: url('img/guy.jpg');
+            color: white;
+
+            /* height: 30000px; */
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 60px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 70px;
+            filter: invert(100%);
+            padding: 0px 18px;
+
+
+        }
+
+        .left div {
+
+            margin: 0px;
+            text-align: center;
+            font-family: 'La Belle Aurore', cursive;
+            font-size: 20px;
+            line-height: 30px;
+
+        }
+
+        .mid {
+
+            width: 33%;
+            margin: 30px auto;
+            display: block;
+            /* border: 2px solid green; */
+
+
+        }
+
+        .navbar li {
+            list-style-type: none;
+            display: inline-block;
+
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 30px 15px;
+            font-size: 15px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: grey;
+
+        }
+
+        .right {
+            position: absolute;
+            right: 33px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid rgb(226, 230, 42); */
+
+        }
+
+        .btn {
+
+            cursor: pointer;
+            margin: 0px 9px;
+            background-color: black;
+            border: 2px solid grey;
+            color: white;
+            border-radius: 15px;
+            font-size: 15px;
+            padding: 4px 14px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        .container button {
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            width: 33%;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(31, 30, 30);
+        }
+
+        .container {
+
+            /* border: 2px solid red; */
+            margin: 100px 80px;
+            padding: 30px;
+            width: 550px;
+            border-radius: 30px;
+            /* border-color: white; */
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .form-group input {
+            font-size: 12px;
+            text-align: center;
+            display: block;
+            width: 344px;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 11px auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="./Sakshi Fitness_files/logo.png" alt="">
+            <div>Sakshi Fitness</div>
+
+        </div>
+        <!-- mid for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="http://127.0.0.1:5500/index.html#">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">About us</a></li>
+                <li><a href="http://127.0.0.1:5500/form.html" target="_blank">Registration</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Contact us</a></li>
+            </ul>
+
+        </div>
+        <!-- right for any buttons -->
+        <div class="right">
+            <button class="btn">Social Media</button><button class="btn">Photos</button>
+
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Mumbai</h1>
+        <form action="http://127.0.0.1:5500/noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your contact">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Enter your email">
+            </div>
+            <button class="btn">Submit</button>
+            <button class="btn">
+                <input type="reset" value="Reset">
+            </button>
+
+        </form>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+</body></html>
