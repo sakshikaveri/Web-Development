@@ -1,2 +1,2 @@
 # Web-Development
-This repository includes the Web development course contents I have learnt and prepared
+This repository contains the materials from the Web development course that I have learned and put together.
