@@ -1,0 +1,128 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(51, 47, 47); */
+}
+
+/* Navigation Bar */
+#navbar {
+    top:0px;
+    display: flex;
+    /* border: 2px solid red; */
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+
+    /* opacity:1; */
+
+}
+#navbar:before {
+    content:"";
+    position: absolute;
+    background-color: black;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+/* Navigation Bar: Logo and Image  */
+#logo img {
+    /* top:0px; */
+    margin: 0px 0px;
+    height: 145px;
+    width: 136px;
+
+}
+
+li a {
+    /* border: 2px solid red; */
+    color: white;
+    text-decoration: none;
+    display: flex;
+    font-family: 'Bree Serif', serif;
+    padding: 7px 5px;
+    display: block;
+}
+li a:hover {
+
+    color: black;
+    background-color: white;
+}
+
+ul {
+    display: flex;
+    padding: 0px 20px;
+}
+
+.item {
+    list-style-type: none;
+    margin: 50px 10px;
+    font-size: 1.1rem;
+}
+
+/* Home Section  */
+#home{
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:3px 200px;
+    top:0px;
+    /* bottom: 0px; */
+    height:280px;
+
+}
+#home:before{
+    content: "";
+    position: absolute;
+    background: url(../bg1.jpg) no-repeat center center/cover;
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.59;
+
+}
+
+#home h1{
+    color:white;
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem;
+    text-emphasis: bold;
+}
+#home p{
+    color:white;
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    text-emphasis: bold;
+}
+
+/* Services Section  */
+#services{
+    
+}
+#services{}
+#services{}
+
+
+
+
+
+/* Utility classes  */ 
+.h-primary{
+    font-size: 3.1rem;
+    padding:1px;
+}
+
+.btn{
+    padding:10px 10px;
+    background-color:rgb(96, 182, 96);
+    border: 2px solid white;
+    font-size:15px;
+    border-radius:10px;
+    margin:7px;
+    cursor: pointer;
+}

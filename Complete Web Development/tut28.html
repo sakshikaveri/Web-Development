@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container {
+            /* this container is now a flex container */
+            display: flex;
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: darkslategrey;
+
+            /* flex-direction: row;  default flex-direction is row */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;  ye upr walon ko overwrite krdega */
+
+            /* flex-wrap: wrap; */
+            /*default flex-wrap is nowrap*/
+
+            /* agar flex-direction aur flex-wrap ek saath likhna h tho */
+            /* flex-flow: row wrap; */
+
+
+            /* this is used for acting on horizontal axis */
+
+            /* justify-content: center;     /* idhr boxes center me ajayenge*/
+            /* justify-content: space-between;   idhr do boxes ke bich equal gap hoga,corner me nai hoga */
+            /* justify-content: space-evenly;   idhr corner include krke equal gaps honge boxes ke around */
+            /* justify-content: space-around;   yahape box ke left right kuch space hogi sare boxes ko */
+
+
+            /* this is used for acting on vertical axis */
+            /* align-items: center; */
+            /*vertically center */
+            /* align-items: flex-end;
+            align-items: flex-start; */
+
+
+        }
+        
+
+        .item {
+            width: 90px;
+            height: 100px;
+            background-color: coral;
+            border: 2px solid black;
+            margin: 10px;
+
+        }
+        #item-1{
+            /* Flex properties for a flex item */
+            /* Higher the order, later it shows up in the container */
+            /* order: 2; */
+
+            /* flex-grow: 2;
+            flex-shrink: 2; */
+
+        }
+        #item-2{
+            /* flex-grow: 3;
+            flex-shrink: 3 ; */
+            flex-basis: 160px;
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+        }
+        #item-3{
+            /* flex: 2 2 230px; */
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+
+            }
+    </style>
+</head>
+
+<body>
+    <h3>This is FlexBox tutorial</h3>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <div class="item" id="item-4">Fourth box</div>
+        <div class="item" id="item-5">Fifth box</div>
+    </div>
+
+</body>
+
+</html>
+<!-- justify-content acts on the main axis and align-items acts on the cross axis -->

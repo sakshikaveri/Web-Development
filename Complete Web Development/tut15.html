@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+
+        /* element selector */
+        p{
+            border: 2px solid blue;
+        }
+
+        /* id selector */
+        #secondpara {
+            color: brown;
+            background-color: cornflowerblue;
+        }
+
+        /* class selector */
+        .bgcolor {
+            color: green;
+            background-color: blanchedalmond;
+        }
+
+        /* grouping selector */
+        span,
+        footer {
+            color: darkolivegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors tutorial</h3>
+    <p id="greenElement" class="bgcolor firstpara">This is the first paragraph</p>
+    <p id="secondpara" class="bgcolor firstpara">This is the second paragraph</p>
+    <div>
+        <p>This is the third paragraph inside div</p>
+        <span>This is span</span>
+    </div>
+    <footer>This is footer</footer>
+</body>
+
+<!-- apan id selector use kab karte hai jab hume sirf ek hi element ko agar property/style 
+lagani ho -->
+
+<!-- aur hum class selector kab use krte hai jab hume group of elements me same style apply 
+karni ho tho ek class banake sabme vhi class dedo -->
+
+<!-- class mtlb multiple elements me ek hi class ja skti hai ya fir ek hi element me multiple
+class ho sakte hai -->
+
+</html>

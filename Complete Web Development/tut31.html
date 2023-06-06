@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h2 {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        /* div ke andar ke saare paragraphs ko ye affect krega */
+
+        /* div p{
+            display:inline-block;
+            color:white;
+            font-weight: bold;
+            background-color: red;
+
+        } */
+
+        /* agar div ka direct child p hai tho ye affect hoga */
+        /* div > p{
+            display:inline-block;
+            color:white;
+            font-weight: bold;
+            background-color: red;
+        } */
+
+        /* isme vo para affect hoga jiska prior sibling div ho matlab p ke upr div rehna chahiye */
+        div+p {
+            /* display:inline-block; */
+            color: white;
+            font-weight: bold;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is more on selectors</h2>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <p>This is the first item</p>
+                </li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <ul>
+            <li>
+                <p>This is another paragraph</p>
+            </li>
+        </ul>
+    </div>
+    <p>This is the outermost paragraph</p>
+</body>
+
+</html>

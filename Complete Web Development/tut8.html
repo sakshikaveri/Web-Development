@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is Forms tutorial</h2>
+    <form action="backend.php"> <!-- idhar jo form ka data hai vo ek backend me jake store hoga-->
+       
+        <!-- The name here is used so that the backend can recognize the tag
+         that we are using.--> 
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="myName" id="name">
+
+        </div>
+        <br>
+        <div>
+            <label for="rollno">Role</label>
+            <input type="text" name="myRole" id="rollno">
+            
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="myEmail" id="email">
+            
+        </div>
+        <br>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="bonus">Bonus</label>
+            <input type="number" name="my Bonus" id="bonus">
+        </div>
+        <br>
+        <div>
+            <label for="Confirmation"> You Agree? </label>
+            <input type="checkbox" name="myconfirmation" id="Confirmation">
+            <!-- You AGREE?: <input type="checkbox" name="You Agree?" checked> for already checked -->
+
+        </div>
+        <br>
+
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="Gender" id="gender">Male<input type="radio" name="Gender" id="gender">Female
+            <!-- idhar ek hi value select hogi kyuki name same diya hai na dono ko-->
+        </div>
+        <br>
+        <div>
+            <label for="wob">Write about yourself</label>
+            <br><textarea name="textarea"  cols="70" rows="10" id="wob"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="mycar" id="car">
+            <option value="ind">Indica</option>
+            <option value="swift">Swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+        <br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Buttons</title>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png');
+            background-repeat: none;
+            
+        }
+        a {
+            text-decoration: none;
+            /*ye underline hataygi*/
+        }
+
+        a:hover {
+            color: rgb(2, 0, 0);
+            background-color: antiquewhite;
+        }
+        a:visited{
+            color:rgb(22, 184, 79);
+        }
+        a:active{
+            background-color:firebrick;   
+        }
+
+        .container {
+            background-color: burlywood;
+            border: 2px solid greenyellow;
+            padding: 34px;
+            margin: 100px auto;
+            width: 50%;
+        }
+
+        .btn {
+            background-color: rgb(214, 217, 221);
+            padding: 6px;
+            border: none;
+            /* dono buttons pe border nai dikhega */
+            cursor: pointer;
+            /* haath jaisa ayga*/
+            font-size: 14px;
+            border-radius: 5px;
+            font-family: 'La Belle Aurore', cursive;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci ab perspiciatis, ullam nostrum repellendus
+            magnam obcaecati quas est, natus culpa qui similique ipsa aperiam libero unde fugiat accusamus sed sunt.
+            Aliquam iure in iusto.</p>
+        <a href="https://web.whatsapp.com/" target="_blank" class="btn">Read more</a>&nbsp;
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+
+<!-- pseudo selectors- a me humne colan lagake likh diya a:hover,a:active -->
+</html>

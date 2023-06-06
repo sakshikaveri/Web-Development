@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container{
+            border:2px solid black;
+            background-color: goldenrod;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            margin: 5px;
+            height: 150px;
+        }
+        #box3{
+            position: relative;
+            left:50px;
+            top: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+
+    </div>
+</body>
+<!-- position: static;
+It is the default position of HTML elements.
+
+position: relative;
+It is used when we need to position an HTML element relative to its normal position.
+We can set the top, right, bottom, and left properties that will cause the element to adjust away from the normal position.
+
+position: absolute;
+An element with the absolute position will move according to the position of its parent element.
+In the absence of any parent element, the HTML element will be placed relative to the page.
+
+Difference between sticky and fixed
+
+The position: fixed means fixed to the viewport. We provide the position values (top, bottom, right, or left) and the element stays there when the user is scrolling. No matter what is happening on screen the fixed element will not move at all. -->
+<br>
+<br>
+<a href="https://www.geeksforgeeks.org/what-is-the-difference-between-positionsticky-and-positionfixed-in-css/" target="_blank">Visit this link for understanding</a>
+</html>
