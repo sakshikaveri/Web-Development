@@ -1,0 +1,90 @@
+----Practice- set1-------
+#box {
+    background-color: #0000ff;
+}
+
+/* ---------Text properties- Text decoration------------ */
+.heading {
+    color: red;
+    /* text-decoration: underline; */
+    /* text-decoration: line-through; */
+    text-decoration: none;
+}
+
+#button1 {
+    background-color: #00ff00;
+}
+
+/* ----Practice-Set2-------- */
+#headingOne {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* * {
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+#outer {
+    font-size: 25px;
+}
+
+#inner {
+    font-size: 10px;
+}
+
+/* ------Practice- Set3---------- */
+/* #practice{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#nav-bar{
+    background-color: black;
+    height: 60px;
+}
+
+#logo{
+    color: goldenrod;
+    font-size: 25px;
+}
+button{
+    background-color: #f08804;
+}
+a{
+    text-decoration: none;
+    margin-right: 161px;
+}
+
+
+/* .homework{
+    height: 500px;
+    width: 150px;
+    background-color: blueviolet;
+}
+.circle1{
+    background-color: crimson;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.circle2{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.circle3{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+} */

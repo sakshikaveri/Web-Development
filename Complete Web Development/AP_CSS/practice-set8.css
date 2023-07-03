@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border: 8px solid blue;
+    border-top: 8px solid rgb(13, 55, 55);
+    border-radius: 50%;
+    /* transition: all 2s ease-in 0s infinite; */
+    animation: myloading 1s ease-in 0s infinite normal;
+}
+/* .main:hover{
+    transform: rotate(360deg);
+} */
+@keyframes myloading{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

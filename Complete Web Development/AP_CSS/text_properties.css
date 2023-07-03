@@ -1,0 +1,50 @@
+/* ---------Text properties- Text align------------ */
+#headingOne {
+    text-align: left;
+    /* text-align: start; */
+}
+
+#headingTwo {
+    text-align: right;
+    /* text-align: end; */
+}
+
+#headingThree {
+    text-align: center;
+}
+
+/* ------------font properties- font- weight------------- */
+h1 {
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bolder;
+}
+
+h4 {
+    font-weight: lighter;
+}
+
+/* ------------font-family-------- */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=EB+Garamond&display=swap');
+
+#paraOne{
+    font-family: cursive;
+    line-height: 2px;
+    line-height: 20px;
+    line-height: 50px;
+    line-height: normal;
+}
+#paraTwo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    text-transform: none;
+}
+#paraThree{
+    font-family: 'EB Garamond', serif;
+}

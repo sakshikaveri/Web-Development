@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.navbar{
+    display: flex;
+    background-color: black;
+    height: 60px;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+div{
+    background-color: aquamarine;
+}
+#div1{
+    width: 500px;
+    height: 400px;
+    display: flex;   
+    justify-content: center; /*center laane ke liye along main axis(row here left to right)*/
+    align-items: center; /*center laane ke liye along cross axis(column here top to bottom)*/
+}
+#div2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+}

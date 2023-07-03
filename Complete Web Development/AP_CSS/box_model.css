@@ -1,0 +1,28 @@
+h1{
+    background-color: aqua;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+    /* border: 2px solid red; */
+    width: 500px;
+    height: 30px;
+    text-align: center;
+}
+div{
+    background-color: rgb(239, 89, 214);
+    height: 100px;
+    width: 100px;
+    
+    /* border: 2px dotted brown; */
+    border-width: 2px;
+    border-style: dashed;
+    border-color: brown;
+    /* padding-left: 10px;   */
+    padding: 1px 2px 3px 4px;  /*top right bottom left (clockwise)*/
+    
+    /*use hota hai for creating a circle */
+    /* border-radius: 50%; */
+    /* height: 100px;
+    width: 100px; */
+    margin: 50px;
+}

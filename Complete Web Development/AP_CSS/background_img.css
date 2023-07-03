@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    display: inline-block;
+    border: 2px solid brown;
+}
+
+#div3{
+    background: url(/images/baby_photo.jpg);
+    background-size: cover;
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+    position: fixed;
+    right: 0;
+}
